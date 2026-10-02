@@ -1,0 +1,10 @@
+{
+  "name":"TO ALL CHILDREN — Ku Bana Bose",
+  "short_name":"To All Children",
+  "description":"Stories for every child in English and Kinyarwanda.",
+  "start_url":"/",
+  "display":"standalone",
+  "background_color":"#f6fbff",
+  "theme_color":"#2563eb",
+  "icons":[{"src":"/logo.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]
+}

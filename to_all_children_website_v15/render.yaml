@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: to-all-children
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true
+    disk:
+      name: stories-data
+      mountPath: /app/data
+      sizeGB: 1

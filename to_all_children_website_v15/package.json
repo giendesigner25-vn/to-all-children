@@ -1,0 +1,16 @@
+{
+  "name": "to-all-children",
+  "version": "15.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "better-sqlite3": "^12.4.1"
+  },
+  "description": "TO ALL CHILDREN / Ku Bana Bose bilingual children story platform",
+  "engines": {
+    "node": ">=20"
+  }
+}
