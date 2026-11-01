@@ -8,7 +8,7 @@ function sendAdminPage(filename, res) {
     path.join(__dirname, '..', 'public', filename)
   ];
 
-  const filePath = possiblePaths.find(candidate => {
+  const filePath = possiblePaths.find((candidate) => {
     return fs.existsSync(candidate) &&
       fs.statSync(candidate).isFile();
   });
@@ -27,15 +27,15 @@ function sendAdminPage(filename, res) {
 
 // Admin login page
 app.get('/admin.html', (req, res) => {
-  sendAdminPage('admin.html', res);
+  return sendAdminPage('admin.html', res);
 });
 
 // Admin dashboard
 app.get('/admin-dashboard.html', (req, res) => {
-  sendAdminPage('admin-dashboard.html', res);
+  return sendAdminPage('admin-dashboard.html', res);
 });
 
 // Old dashboard URL compatibility
 app.get('/admin-dashboar.html', (req, res) => {
-  sendAdminPage('admin-dashboard.html', res);
+  return sendAdminPage('admin-dashboard.html', res);
 });
